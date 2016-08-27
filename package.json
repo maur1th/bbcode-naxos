@@ -1,0 +1,21 @@
+{
+  "name": "naxos-bbcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -o js/bundle.js",
+    "watch": "watchify index.js -o js/bundle.js --debug --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bbcode": "^0.1.5",
+    "browserify": "^13.1.0",
+    "jquery": "^2.2.4"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

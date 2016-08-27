@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BBCode interpreter</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/naxos.css" rel="stylesheet">
+    <script type="text/javascript" src="./js/bundle.js"></script>
+    <script type="text/javascript" src="./js/naxos.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <a name="{{ post.pk }}"></a>
+        <div class="col-xs-2 text-center hidden-xs equal-divs" style="padding: 10px 0px; border-right:1px solid #f9f9f9; background-color: #f2f2f2; word-wrap:break-word;">
+            <p style="margin-bottom:5px"><strong><a class="author" role="button" tabindex="0" role="button" data-toggle="popover" data-content="<a class='send-pm btn btn-sm btn-default' role='button' data-toggle='modal' data-target='#pm-modal'>Envoyer un message privé</a>">Toto</a></strong></p>
+                <p style="line-height:100%"><small>Je pense donc je suis</small></p>
+                <!-- <p><img src="{{ media }}{{ post.cached_author.logo }}" alt=""></p> -->
+            <p style="font-size:10px">depuis le croque monsieur</p>
+        </div>
+        <div class="col-xs-12 col-sm-10 post equal-divs">
+          <span class="hidden-sm hidden-lg hidden-md" style="display:inline"><strong>{{ post.cached_author }}</strong> | </span>
+          <small>
+              <span class="hidden-xs">Posté le un jour</span><span class="hidden-sm hidden-lg hidden-md">Le un jour</span>
+              | <a href="{% url 'forum:quote' category.slug thread.slug post.pk %}">Citer</a>
+              | <a href="{% url 'forum:post' post.pk %}"><small><span class="glyphicon glyphicon-link"></span></small></a>
+          </small>
+          <hr style="margin:5px 0 8px 0; border-top: 1px solid #ccc">
+          <div class="post-content" style="word-wrap: break-word"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <strong>Réponse rapide :</strong>
+          <br>
+          <textarea cols="80" id="id_content_plain" class="textarea form-control" name="content_plain" rows="5" maxlength="100000"></textarea>
+          <br>
+          <button type="submit" id="submit" class="btn btn-default btn-sm" accesskey="s">Répondre</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
