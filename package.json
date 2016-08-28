@@ -1,7 +1,8 @@
 {
   "name": "naxos-bbcode",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom bbcode parser",
+  "repository": "https://github.com/maur1th/bbcode-naxos.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "bbcode": "^0.1.5",
     "browserify": "^13.1.0",
     "eslint": "^3.4.0",
     "jquery": "^2.2.4"
