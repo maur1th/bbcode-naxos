@@ -14,7 +14,8 @@
   "devDependencies": {
     "browserify": "^13.1.0",
     "eslint": "^3.4.0",
-    "jquery": "^2.2.4"
+    "jquery": "^2.2.4",
+    "watchify": "^3.7.0"
   },
   "dependencies": {
     "bootstrap": "^3.3.7"
