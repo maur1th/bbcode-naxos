@@ -2,7 +2,7 @@
 const $ = require('jquery')
 window.jQuery = $
 const bootstrap = require('bootstrap/dist/js/bootstrap')
-const bbcode = require('bbcode')
+const bbcode = require('./lib/bbcode')
 require('./lib/grid')($)
 
 
